@@ -1,0 +1,18 @@
+<!-- src/app/pages/profile/profile.component.html -->
+<div *ngIf="profiles.length > 0; else noProfiles">
+    <ul>
+      <li *ngFor="let profile of profiles">
+        <p>User: {{ profile.user }}</p>
+        <p>Bio: {{ profile.bio }}</p>
+        <p>
+          <img *ngIf="profile.profile_picture" [src]="profile.profile_picture" alt="Profile Picture" />
+          <span *ngIf="!profile.profile_picture">No picture available</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noProfiles>
+    <p>No profiles found.</p>
+  </ng-template>
+  
