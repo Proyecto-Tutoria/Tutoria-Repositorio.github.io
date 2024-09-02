@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // Añadir esto para el HTTP
+import { FormsModule } from '@angular/forms'; // Añadir esto para usar [(ngModel)]
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// dashboard components
+// dashboard components 
 import { LayoutComponent } from './dashboard/layout/layout.component';
 import { TopBarComponent } from './dashboard/top-bar/top-bar.component';
 import { OverlayComponent } from './dashboard/overlay/overlay.component';
@@ -42,6 +44,12 @@ import { ContentComponent } from './components/content/content.component';
 import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+
+// Importar el servicio aquí (solo si tienes un archivo de servicio en una ubicación diferente)
+import { ProfileService } from './services/profile.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,9 +92,17 @@ import { AngularIconComponent } from './components/docs/icons/angular-icon/angul
     ContentComponent,
     FolderIconComponent,
     AngularIconComponent,
+    ProfileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule, // Añadir para las solicitudes HTTP
+    FormsModule, // Añadir para [(ngModel)]
+  ],
+  providers: [ProfileService], // Añadir el servicio aquí si lo importaste
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+
