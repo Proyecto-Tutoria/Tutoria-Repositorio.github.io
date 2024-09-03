@@ -1,19 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
-=======
-import { HttpClientModule } from '@angular/common/http'; // Añadir esto para el HTTP
-import { FormsModule } from '@angular/forms'; // Añadir esto para usar [(ngModel)]
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-<<<<<<< HEAD
 // dashboard components
-=======
-// dashboard components 
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411
 import { LayoutComponent } from './dashboard/layout/layout.component';
 import { TopBarComponent } from './dashboard/top-bar/top-bar.component';
 import { OverlayComponent } from './dashboard/overlay/overlay.component';
@@ -51,15 +42,6 @@ import { ContentComponent } from './components/content/content.component';
 import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
-<<<<<<< HEAD
-=======
-import { ProfileComponent } from './pages/profile/profile.component';
-
-// Importar el servicio aquí (solo si tienes un archivo de servicio en una ubicación diferente)
-import { ProfileService } from './services/profile.service';
-
-
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411
 @NgModule({
   declarations: [
     AppComponent,
@@ -102,26 +84,9 @@ import { ProfileService } from './services/profile.service';
     ContentComponent,
     FolderIconComponent,
     AngularIconComponent,
-<<<<<<< HEAD
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-=======
-    ProfileComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule, // Añadir para las solicitudes HTTP
-    FormsModule, // Añadir para [(ngModel)]
-  ],
-  providers: [ProfileService], // Añadir el servicio aquí si lo importaste
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
-
-
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411

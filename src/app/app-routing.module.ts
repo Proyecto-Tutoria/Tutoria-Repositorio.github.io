@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-<<<<<<< HEAD
-=======
-import { ProfileComponent } from './pages/profile/profile.component';
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411
 
 import { UxComponent } from './pages/ux/ux.component';
 import { ArComponent } from './pages/ar/ar.component';
@@ -25,11 +21,6 @@ const routes: Routes = [
   { path: 'admin/illustration', component: IllustrationComponent },
   { path: 'admin/documentation', component: DocumentationComponent },
   { path: 'admin/graphic-design', component: GraphicDesignComponent },
-<<<<<<< HEAD
-=======
-  { path: 'profile', component: ProfileComponent },
-  { path: '', redirectTo: '/profile', pathMatch: 'full' }
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411
 ];
 
 @NgModule({
@@ -37,7 +28,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-<<<<<<< HEAD
-=======
-
->>>>>>> cc6528f0a5e33410ad11caa4a7c308e560300411
