@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
 
 import { UxComponent } from './pages/ux/ux.component';
 import { ArComponent } from './pages/ar/ar.component';
@@ -13,6 +14,7 @@ import { GraphicDesignComponent } from './pages/graphic-design/graphic-design.co
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'mi-perfil', component: MiPerfilComponent },
   { path: 'admin/ux', component: UxComponent },
   { path: 'admin/ar', component: ArComponent },
   { path: 'admin/videos', component: VideoComponent },

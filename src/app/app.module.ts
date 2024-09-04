@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+
+const routes: Routes = [
+  
+];
+
 
 // dashboard components
 import { LayoutComponent } from './dashboard/layout/layout.component';
@@ -25,6 +29,7 @@ import { IllustrationComponent } from './pages/illustration/illustration.compone
 import { DocumentationComponent } from './pages/documentation/documentation.component';
 import { GraphicDesignComponent } from './pages/graphic-design/graphic-design.component';
 
+
 // icons
 import { ArIconComponent } from './dashboard/icons/ar-icon/ar-icon.component';
 import { UxIconComponent } from './dashboard/icons/ux-icon/ux-icon.component';
@@ -42,6 +47,8 @@ import { ContentComponent } from './components/content/content.component';
 import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
+import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,9 +91,14 @@ import { AngularIconComponent } from './components/docs/icons/angular-icon/angul
     ContentComponent,
     FolderIconComponent,
     AngularIconComponent,
+    MiPerfilComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,  
+    
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

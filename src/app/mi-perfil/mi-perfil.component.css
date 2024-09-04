@@ -1,0 +1,23 @@
+.container {
+    max-width: 1000px; /* O el ancho máximo que prefieras */
+    height: calc(100vh - 4rem); /* Ajusta la altura total menos el espacio ocupado por el header */
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container > div {
+    margin-bottom: 2rem; /* Espacio entre secciones */
+  }
+  
+  .container img {
+    border-radius: 50%;
+  }
+  
+  button {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+  }
