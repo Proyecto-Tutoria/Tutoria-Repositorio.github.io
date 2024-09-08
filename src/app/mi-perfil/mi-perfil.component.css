@@ -1,11 +1,13 @@
 .container {
     max-width: 1000px; /* O el ancho máximo que prefieras */
-    height: calc(100vh - 4rem); /* Ajusta la altura total menos el espacio ocupado por el header */
+    height: auto; /* Ajusta la altura total menos el espacio ocupado por el header */
+    background:transparent;
+    /*backdrop-filter: blur(1px);*/
   }
   
   .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .container > div {
@@ -21,3 +23,5 @@
     padding: 10px;
     text-align: center;
   }
+
+  
