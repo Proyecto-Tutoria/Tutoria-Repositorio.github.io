@@ -3,13 +3,13 @@ ANTES DE TODO DESCARGAR POSTGRESQL INSTALARLO.
 ELIMINAR CARPETA MYENV DE LA CARPETA BACKEND
 
 ABRIR LA TERMINAL EN LA CARPETA BACKEND,
-  TERMINAL: CD BACKEND
+- TERMINAL: CD BACKEND
 
 LUEGO
 
 CREAR ENTORNO VIRTUAL
 
-  python -m venv nombre_del_entorno
+- python -m venv nombre_del_entorno
 
 ACTIVAR ENTORNO VIRTUAL
 
@@ -17,7 +17,7 @@ ACTIVAR ENTORNO VIRTUAL
 
 TE TIENE QUE SALIR EN TERMINAL ASI:
 
-  (myenv) C:\ruta\a\tu\proyecto>
+- (myenv) C:\ruta\a\tu\proyecto>
 
 LUEGO 
 
@@ -47,7 +47,7 @@ CONFIGURAR LA BASE DE DATOS EN SETTINGS.PY BACKEND CON SUS DATOS:
     }
 
 LUEGO PROBAR SI FUNCIONA CON (estando en la terminal con (myenv) C:\ruta\a\tu\proyecto\backend>)
-  python manage.py runserver
+- python manage.py runserver
 
 
 
