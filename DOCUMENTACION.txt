@@ -1,0 +1,33 @@
+
+
+ENTRAR CON ENTORNO VIRTUAL:
+    ./venv/Scripts/activate
+
+BASE DE DATOS POSTGRESQL (16.4)
+
+INSTALACIÓN POR COMANDO:
+
+    INSTALAR CHOCOLATEY
+    @powershell -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\Chocolatey\bin"
+
+
+    choco install postgresql
+    psql --version
+
+    Para iniciar PostgreSQL
+    pg_ctl -D "C:\Program Files\PostgreSQL\xx\data" start
+
+
+CONFIGURAR LA BASE DE DATOS EN SETTINGS.PY BACKEND CON SUS DATOS:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'bd_tutoria',  # Nombre de la base de datos
+            'USER': 'arkhaa',    # Usuario de la base de datos
+            'PASSWORD': 'admin',  # Contraseña del usuario
+            'HOST': 'localhost',  # Asegúrate de que el host sea 'localhost'
+            'PORT': '5432',       # Puerto de la base de datos
+        }
+    }
+
