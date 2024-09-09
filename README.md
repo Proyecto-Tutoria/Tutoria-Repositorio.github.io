@@ -21,10 +21,10 @@ TE TIENE QUE SALIR EN TERMINAL ASI:
 
 LUEGO 
 
-  pip install Django
-  pip install djangorestframework
-  pip install django-cors-headers
-  pip install psycopg2-binary
+- pip install Django
+- pip install djangorestframework
+- pip install django-cors-headers
+- pip install psycopg2-binary
 
 luego de instalar las dependencias abrir pgAdmin4 que es la base de datos posgresql
 conectar en la base de datos, click derecho en postgreSQL 16, crear base de datos colocan el nombre de bd_tutoria y password admin, en todos lados que pidan password en la bd
